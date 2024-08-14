@@ -1,0 +1,92 @@
+/* Global Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #f0f2f5, #e4e6eb); /* Subtle gradient background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Changed to min-height for better responsiveness */
+    color: #333;
+    background-attachment: fixed; /* Ensure the gradient background stays fixed */
+}
+
+/* Add a subtle pattern or texture to the background */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'); /* Example texture */
+    opacity: 0.1; /* Make it subtle */
+    z-index: -1; /* Ensure it stays behind content */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    max-width: 90vw; /* Adjusted to use more screen width */
+    margin: auto;
+    padding: 30px; /* Increased padding */
+    background-color: #ffffff; /* Clean white background */
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+    position: relative; /* To ensure the background texture stays inside the container */
+}
+
+/* Box Styles */
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px; /* Increased padding */
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for boxes */
+    height: 150px; /* Increased height */
+    min-width: 150px; /* Ensures the boxes don't get too small */
+}
+
+.box:hover {
+    transform: translateY(-5px); /* Slightly more pronounced hover effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* Icon Styles */
+.box i { /* Assuming you are using <i> tags for icons */
+    font-size: 40px; /* Increase icon size */
+    margin-bottom: 10px; /* Space between icon and text */
+}
+
+/* Specific Box Colors */
+.home { background-color: #003366; } /* Dark Navy Blue */
+.attendance { background-color: #0056b3; } /* Medium Blue */
+.payroll { background-color: #2d995b; } /* Dark Green */
+.employee { background-color: #ffca28; } /* Light Amber */
+.department { background-color: #00838f; } /* Dark Cyan */
+.position { background-color: #5e35b1; } /* Dark Purple */
+.allowances { background-color: #d81b60; } /* Dark Pink */
+.deductions { background-color: #f57c00; } /* Dark Orange */
+.users { background-color: #4e4e4e; } /* Dark Grey */
+.logout { background-color: #212121; } /* Near Black */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}

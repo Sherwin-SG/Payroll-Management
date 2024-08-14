@@ -1,0 +1,68 @@
+/* Global Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f2f5; /* Lighter background for a clean look */
+    margin: 0;
+    padding: 0;
+    color: #495057; /* Neutral text color */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #ffffff; /* White background for the container */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #343a40; /* Darker shade for heading */
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* Main Content Styles */
+.main {
+    padding: 25px;
+    background-color: #ffffff; /* Clean background */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #dee2e6; /* Slightly darker border */
+    text-align: left;
+}
+
+table th {
+    background-color: #f8f9fa; /* Light background for headers */
+    color: #495057; /* Dark text color for readability */
+    font-weight: 600;
+}
+
+button {
+    background-color: #007bff; /* Corporate blue */
+    color: #ffffff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}

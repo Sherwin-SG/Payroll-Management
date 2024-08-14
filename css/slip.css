@@ -1,0 +1,85 @@
+/* Global Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f7f9fc; /* Lighter background for a clean look */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Neutral text color */
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Ensure vertical alignment */
+    max-width: 1200px; /* Center content */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff; /* Clean background for container */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Main Content Styles */
+.main {
+    flex-grow: 1;
+    background-color: #ffffff; /* Clean background */
+    padding: 30px; /* Increased padding for more space */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+}
+
+h1 {
+    color: #343a40; /* Darker shade for headings */
+    margin-bottom: 20px; /* Margin for spacing */
+    font-size: 28px;
+    font-weight: 700;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px; /* Slightly increased margin */
+    color: #495057; /* Darker color for better readability */
+    font-weight: 500; /* Slightly bolder font */
+}
+
+select,
+input[type="date"] {
+    width: 100%;
+    padding: 12px; /* Increased padding for better usability */
+    margin-bottom: 20px; /* Increased margin for spacing */
+    border: 1px solid #ced4da; /* Light border for inputs */
+    border-radius: 5px; /* Rounded corners for inputs */
+    background-color: #ffffff; /* Clean background */
+    font-size: 16px;
+    color: #495057; /* Darker text color */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle inset shadow */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+select:focus,
+input[type="date"]:focus {
+    border-color: #80bdff; /* Highlight border on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25); /* Highlight shadow */
+}
+
+input[type="submit"] {
+    background-color: #007bff; /* Corporate blue */
+    color: #ffffff;
+    padding: 12px 20px; /* Increased padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Deeper shadow */
+}
+
+hr {
+    border: 1px solid #e0e0e0; /* Light border for HR */
+    margin: 20px 0;
+}
