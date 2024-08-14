@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee List</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/department.css">
+
 <script src="script.js" defer></script>
 </head>
 
@@ -115,7 +117,7 @@
     ?>
 
 <h2>Add Entry to Positions:</h2>
-<form method="POST">
+<form class="form-position-entry" method="POST">
     <label for="department_name">Department:</label>
     <select name="department_id" required>
         <?php

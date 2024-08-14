@@ -1,0 +1,101 @@
+/* styles.css */
+
+/* Basic Reset */
+body, h2, h3, p, ul, li, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light Grey Background */
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Main Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styles */
+h2 {
+    color: #003366; /* Dark Blue */
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #00509e; /* Lighter Blue */
+    margin-bottom: 15px;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+/* List Styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #f9f9f9; /* Light Background */
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+li button {
+    background-color: #ff4d4d; /* Red */
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+li button:hover {
+    background-color: #e60000; /* Darker Red */
+}
+
+/* Button Styling */
+button {
+    background-color: #00509e; /* Lighter Blue */
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #003366; /* Dark Blue */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    button {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}

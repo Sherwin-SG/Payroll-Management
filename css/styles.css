@@ -1,191 +1,130 @@
-/* Navigation Styles */
-.navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    background-color: #2c3e50; /* Darker, corporate color */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.navbar-toggle {
-    cursor: pointer;
-    color: #ecf0f1; /* Softer white for better contrast */
-    font-size: 26px;
-    background: none;
-    border: none;
-    padding: 8px;
-    border-radius: 50%;
-    transition: background-color 0.3s ease;
-}
-
-.navbar-toggle:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Subtle hover effect */
-}
-
-.sidebar {
-    width: 270px;
-    background-color: #34495e; /* Corporate dark blue */
+/* Basic body and layout styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa; /* Light background for a clean look */
+    color: #333;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
-    padding-top: 30px;
-    position: absolute;
-    top: 70px;
-    left: -270px;
-    transition: left 0.4s ease;
-    border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    line-height: 1.6;
 }
 
-.sidebar.show {
+/* Navbar container styling */
+.navbar-container {
+    width: 100%;
+    background-color: #2c3e50; /* Dark, techy blue */
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
     left: 0;
+    z-index: 1000;
 }
 
-.sidebar nav ul {
+.navbar-container nav ul {
     list-style-type: none;
-    padding: 0;
-    width: 100%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
-.sidebar nav ul li {
-    margin-bottom: 15px;
+.navbar-container nav ul li {
+    margin: 0 15px;
 }
 
-.sidebar nav ul li a {
-    color: #ecf0f1;
+.navbar-container nav ul li a {
+    color: #ecf0f1; /* Light text for contrast */
     text-decoration: none;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 10px 20px;
-    display: block;
-    width: 100%;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: 600;
+    padding: 10px;
+    transition: background-color 0.3s ease;
 }
 
-.sidebar nav ul li a:hover {
-    background-color: #2c3e50;
-    color: #f39c12; /* Bright gold color for hover effect */
-}
-
-button {
-    background-color: #2980b9; /* Corporate blue */
-    color: white;
-    padding: 12px 24px;
-    border: none;
+.navbar-container nav ul li a:hover {
+    background-color: #34495e; /* Slightly darker on hover */
     border-radius: 5px;
-    cursor: pointer;
-    font-size: 18px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-button:hover {
-    background-color: #3498db; /* Slightly lighter blue for hover */
-    transform: translateY(-2px); /* Subtle lift on hover */
+/* Sidebar toggle button */
+.navbar-toggle {
+    display: none; /* Hidden for simplicity, could be used for responsive design */
 }
 
-.bars, .cross {
-    display: inline-block;
-    width: 28px;
-    height: 28px;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: transform 0.3s ease;
-}
-
-.cross {
-    display: none;
-}
-
-.bars {
-    background-image: url('bars.svg');
-}
-
-.cross {
-    background-image: url('cross.svg');
-}
-
-.bars:hover, .cross:hover {
-    transform: rotate(90deg); /* Smooth rotation on hover */
-}
-
-/* Global Styles */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Professional font */
-    background-color: #ecf0f1;
-    margin: 0;
-    padding: 0;
-    color: #2c3e50;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 30px;
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
+/* Main content header */
 h1 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #34495e;
+    margin-top: 70px; /* Space for the fixed navbar */
     font-size: 32px;
     font-weight: 700;
+    color: #2c3e50; /* Consistent with navbar color */
+    margin-bottom: 20px;
+    text-align: center;
 }
 
-/* Main Content Styles */
-.main {
-    padding: 30px;
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+/* Common button styles */
+.button {
+    background-color: #3498db; /* Blue button */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 20px 0;
 }
 
+.button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Table styles */
 table {
     width: 100%;
+    max-width: 1200px;
     border-collapse: collapse;
-    margin-bottom: 30px;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 table th, table td {
-    padding: 15px;
-    border: 1px solid #dddddd;
+    padding: 12px 15px;
     text-align: left;
-    font-size: 16px;
+    border-bottom: 1px solid #ddd;
 }
 
 table th {
-    background-color: #bdc3c7;
-    color: #2c3e50;
-    font-weight: 600;
+    background-color: #34495e; /* Dark header for table */
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 table tr:nth-child(even) {
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; /* Subtle alternate row coloring */
 }
 
-table tr:hover {
-    background-color: #f1f1f1;
+table tr:last-child td {
+    border-bottom: none;
 }
 
-button {
-    background-color: #2980b9;
-    color: white;
-    padding: 12px 24px;
+table button {
+    background-color: #e74c3c; /* Red delete button */
+    color: #fff;
+    padding: 8px 12px;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
-    font-size: 18px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #3498db;
-    transform: translateY(-2px);
+table button:hover {
+    background-color: #c0392b; /* Darker red on hover */
 }

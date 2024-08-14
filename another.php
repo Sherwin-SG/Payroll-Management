@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Payroll Entry</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/another.css">
+   
     <!-- Add your CSS stylesheets if needed -->
 </head>
 
 <body>
-<div class="container">
+<div class="navbar-container">
 
 <div class="sidebar sidebargo">
 

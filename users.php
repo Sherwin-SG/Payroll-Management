@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Management</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/department.css">
 <script src="script.js" defer></script>
 </head>
 
@@ -39,7 +40,7 @@
 
     <div id="addUserForm" style="display: none;">
         <h2>Add New User:</h2>
-        <form method="POST">
+        <form class="form-position-entry" method="POST">
             <label for="name">Name:</label>
             <input type="text" name="name" required>
             <br>

@@ -1,0 +1,47 @@
+/* Styles for the form to add a position entry */
+.form-position-entry {
+    max-width: 600px; /* Limit the width for better readability */
+    margin: 0 auto; /* Center the form on the page */
+    padding: 20px; /* Add padding around the form elements */
+    border: 1px solid #ddd; /* Light border for definition */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    background-color: #f9f9f9; /* Light background color for better contrast */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.form-position-entry h2 {
+    margin-bottom: 20px; /* Space below the header */
+    color: #333; /* Darker color for better readability */
+}
+
+.form-position-entry label {
+    display: block; /* Make labels block-level for alignment */
+    font-weight: bold; /* Bold labels for emphasis */
+    margin-bottom: 5px; /* Space below labels */
+    color: #555; /* Slightly lighter color for labels */
+}
+
+.form-position-entry select,
+.form-position-entry input[type="text"] {
+    width: 100%; /* Full width to fill the container */
+    padding: 10px; /* Padding inside the input/select elements */
+    margin-bottom: 15px; /* Space below input/select elements */
+    border: 1px solid #ccc; /* Light border for inputs/selects */
+    border-radius: 4px; /* Rounded corners for inputs/selects */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.form-position-entry input[type="submit"] {
+    background-color: #4CAF50; /* Green background color for the submit button */
+    color: white; /* White text color for contrast */
+    border: none; /* Remove border for a cleaner look */
+    padding: 10px 20px; /* Padding inside the button */
+    border-radius: 4px; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer cursor to indicate it's clickable */
+    font-size: 16px; /* Larger font size for the button text */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.form-position-entry input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Department Management</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/department.css">
+    
 <script src="script.js" defer></script>
    
    
@@ -104,7 +106,7 @@
     $conn->close();
     ?>
 
-    <form method="POST">
+<form class="form-position-entry" method="POST">
         <label for="department_name">Department Name:</label>
         <input type="text" name="department_name" required>
         <input type="submit" name="submit" value="Add Department">

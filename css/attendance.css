@@ -1,65 +1,126 @@
-/* Global Styles */
-body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #e9ecef;
-    margin: 0;
-    padding: 0;
-    color: #343a40;
-}
 
-.container {
+/* Main content styling */
+.main-content {
+    width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 30px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
 }
 
+/* Header styling */
 h1 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #212529;
     font-size: 32px;
     font-weight: 700;
+    color: #2c3e50; /* Consistent with navbar color */
+    margin-bottom: 20px;
+    text-align: center;
 }
 
-/* Main Content Styles */
-.main {
-    padding: 25px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-}
-
-table {
+/* Table styles */
+.data-table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 25px;
-    background-color: #ffffff;
-    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-table th, table td {
-    padding: 15px;
-    border: 1px solid #dee2e6;
+.data-table th, .data-table td {
+    padding: 12px 15px;
     text-align: left;
-    color: #495057;
+    border-bottom: 1px solid #ddd;
 }
 
-table th {
-    background-color: #f8f9fa;
-    color: #495057;
-    font-weight: 600;
+.data-table th {
+    background-color: #34495e; /* Dark header for table */
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
-table td {
-    background-color: #ffffff;
+.data-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Subtle alternate row coloring */
 }
 
-table tr:nth-child(even) td {
-    background-color: #f8f9fa;
+.data-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Inline form styling */
+.inline-form {
+    display: inline;
+}
+
+/* Button styles */
+.button {
+    background-color: #3498db; /* Blue button */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 20px 0;
+}
+
+.button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+.delete-button {
+    background-color: #e74c3c; /* Red delete button */
+}
+
+.delete-button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+.add-entry-button {
+    background-color: #2980b9; /* Blue submit button */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Full width of the container */
+}
+
+.add-entry-button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Form styles */
+.form-container {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.form-container table {
+    width: 100%;
+    border: none;
+    box-shadow: none;
+}
+
+.form-container th, .form-container td {
+    padding: 10px;
+    text-align: left;
+}
+
+.submit-button {
+    background-color: #2980b9; /* Blue submit button */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Full width of the container */
+}
+
+.submit-button:hover {
+    background-color: #1f639e; /* Darker blue on hover */
 }

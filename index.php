@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="login2.css">
+<link rel="stylesheet" href="css/login2.css">
 <?php
 // Assuming you have a form with POST method to collect username and password
 if ($_SERVER["REQUEST_METHOD"] === "POST") {

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deduction Management</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/department.css">
 <script src="script.js" defer></script>
 </head>
 
@@ -34,7 +35,7 @@
     </div>
 
     <h1>Deduction Management</h1>
-
+ 
     <?php
 $servername = "localhost";
 $username = "admin";
@@ -105,7 +106,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit_deduction"])) {
     ?>
 
     <h2>Add Entry to Deductions:</h2>
-    <form method="POST">
+    <form class="form-position-entry" method="POST">
         <label for="deduction_info">Deduction Information:</label>
         <input type="text" name="deduction_info" required>
         <br>

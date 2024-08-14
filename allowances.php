@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Allowance Management</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/department.css">
 <script src="script.js" defer></script>
 </head>
 
@@ -104,7 +105,7 @@
     ?>
 
     <h2>Add Entry to Allowances:</h2>
-    <form method="POST">
+    <form class="form-position-entry" method="POST">
         <label for="allowance_info">Allowance Information:</label>
         <input type="text" name="allowance_info" required>
         <br>
